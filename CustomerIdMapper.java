@@ -18,7 +18,7 @@ public class CustomerIdMapper extends Mapper<LongWritable, Text, CompositeKeyFor
 	  
 	  CompositeKeyForCustomerId compositeKeyForCustomerId = new CompositeKeyForCustomerId();
 	  
-	  log.info("inside mapper");	  
+	  log.info("inside 1st mapper");	  
 	  if (value.toString().length() > 0) {
 		  String arrEntityAttributes[] = value.toString().split(",");
 		  if (arrEntityAttributes.length > 3) {
