@@ -23,10 +23,10 @@ public class SalesPerCustomerReducer extends Reducer<CompositeKeyForCustomerId, 
 	  for (Text text : values) {
 		  if (key.getIndex() == 1) {
 			  cusId = key.getCustomerId();
-			  log.info("bazinga inside reduce reducer, cusid " + cusId);
+			  log.info("inside first reducer, cusid " + cusId);
 			  strBuilder.append(text.toString()).append(commaSeparator);
 		  } else {
-			  log.info("bazinga inside reduce reducer, sales price " + Integer.parseInt(text.toString()));
+			  log.info("inside first reducer, sales price " + Integer.parseInt(text.toString()));
 			  sum += Integer.parseInt(text.toString());
 		  }
 	  }
